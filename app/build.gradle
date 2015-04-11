@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion globalConfiguration.getAt("androidCompileSdkVersion")
+    buildToolsVersion globalConfiguration.getAt("androidBuildToolsVersion")
+
+    defaultConfig {
+        applicationId globalConfiguration.getAt("applicationId")
+        minSdkVersion globalConfiguration.getAt("androidMinSdkVersion")
+        targetSdkVersion globalConfiguration.getAt("androidTargetSdkVersion")
+        versionCode globalConfiguration.getAt("versionCode")
+        versionName globalConfiguration.getAt("versionName")
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    packagingOptions {
+        exclude 'LICENSE.txt'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+}
+
+dependencies {
+    def appDependencies = rootProject.ext.appDependencies
+
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile appDependencies.appcompat_v7
+    compile appDependencies.cardview
+    compile appDependencies.palette
+    compile appDependencies.recyclerview
+    compile appDependencies.retrofit
+    compile appDependencies.okhttp
+    compile appDependencies.okhttp_urlconnection
+    compile appDependencies.fresco
+    compile appDependencies.fastjson
+    compile appDependencies.eventbus
+    compile appDependencies.dagger
+    compile appDependencies.butterknife
+
+}

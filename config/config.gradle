@@ -1,0 +1,34 @@
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+ext {
+    //Android
+    androidCompileSdkVersion = 22
+    androidBuildToolsVersion = "22.0.1"
+    androidMinSdkVersion     = 14
+    androidTargetSdkVersion  = 22
+
+    versionCode              = 5
+    versionName              = "V2.0"
+
+    applicationId            = "com.mredrcok.cyxbs"
+
+    appDependencies = [
+            appcompat_v7:"com.android.support:appcompat-v7:22.0.0",
+            cardview:"com.android.support:cardview-v7:22.0.0",
+            palette:"com.android.support:palette-v7:22.0.0",
+            recyclerview:"com.android.support:recyclerview-v7:22.0.0",
+            retrofit:"com.squareup.retrofit:retrofit:1.9.0",
+            okhttp:"com.squareup.okhttp:okhttp:2.0.0",
+            okhttp_urlconnection:"com.squareup.okhttp:okhttp-urlconnection:2.3.0",
+            fresco:"com.michaelpardo:activeandroid:3.1.0-SNAPSHOT",
+            fastjson:"com.alibaba:fastjson:1.1.45.android",
+            eventbus:"de.greenrobot:eventbus:2.4.0",
+            dagger:"com.google.dagger:dagger:2.0",
+            butterknife:"com.jakewharton:butterknife:6.1.0",
+    ]
+
+}
