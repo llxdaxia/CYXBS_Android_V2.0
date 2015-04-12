@@ -30,7 +30,7 @@ ext {
     eventbusVersion             = '2.4.0'
     daggerVersion               = '2.0'
     butterknifeVersion          = '6.1.0'
-    frescoVersion               = '0.1.0+'
+    frescoVersion               = '0.2.0+'
 
     appDependencies = [
             appcompat_v7        : "com.android.support:appcompat-v7:${appcompatVersion}",
@@ -47,6 +47,7 @@ ext {
             daggerCompiler      : "com.google.dagger:dagger-compiler:${daggerVersion}",
             butterknife         : "com.jakewharton:butterknife:${butterknifeVersion}",
             fresco              : "com.facebook.fresco:fresco:${frescoVersion}",
+            imagepipeline_okhttp: "com.facebook.fresco:imagepipeline-okhttp:${frescoVersion}"
 
     ]
 
