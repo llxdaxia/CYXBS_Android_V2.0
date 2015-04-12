@@ -7,7 +7,7 @@ package com.mredrock.cyxbs.config;
  */
 public class Api {
     //HEADER
-    public static final String HEADER_KEY                   = "test";
+    public static final String HEADER_KEY                   = "";
     public static final String HEADER_VALUE                 = "";
 
     public static final String END_POINT_REDROCK            = "http://hongyan.cqupt.edu.cn";
