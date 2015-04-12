@@ -29,5 +29,6 @@ proguard/
 .idea/
 
 # Api.java
+app/src/main/java/com/mredrock/cyxbs/config/Api.java
 
 
