@@ -7,7 +7,7 @@ package com.mredrock.cyxbs.config;
  */
 public class Api {
     //HEADER
-    public static final String HEADER_KEY                   = "";//test fuck
+    public static final String HEADER_KEY                   = "";//test fuck!!!
 
     public static final String HEADER_VALUE                 = "";
     
