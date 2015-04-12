@@ -5,7 +5,7 @@ package com.mredrock.cyxbs.config;
  * Created by david on 15/4/12.
  * email: yangcheng0816@gmail.com
  */
-public class Api {
+public class _Api {
     //HEADER
     public static final String HEADER_KEY                   = "";//test fuck!!!
 
