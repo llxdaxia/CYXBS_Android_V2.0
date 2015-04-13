@@ -42,6 +42,22 @@ public class Toaster {
         });
     }
 
+    private static void show(final Context context, final String message,
+                             final int duration) {
+        if (context == null)
+            return;
+        if (TextUtils.isEmpty(message))
+            return;
+        Toast.makeText(context,message,duration).show();
+    }
+
+    private static void show(final Context context, final int resId,
+                             final int duration) {
+        if (context == null)
+            return;
+        Toast.makeText(context,resId,duration).show();
+    }
+
     /**
      * Show message in {@link Toast} with {@link Toast#LENGTH_LONG} duration
      *
@@ -52,6 +68,10 @@ public class Toaster {
         show(activity, resId, LENGTH_LONG);
     }
 
+    public static void showLong(final Context context, String message) {
+        show(context, message, LENGTH_LONG);
+    }
+
     /**
      * Show message in {@link Toast} with {@link Toast#LENGTH_SHORT} duration
      *
@@ -60,6 +80,10 @@ public class Toaster {
      */
     public static void showShort(final Activity activity, final int resId) {
         show(activity, resId, LENGTH_SHORT);
+    }
+
+    public static void showShort(final Context context, String message) {
+        show(context, message, LENGTH_SHORT);
     }
 
     /**

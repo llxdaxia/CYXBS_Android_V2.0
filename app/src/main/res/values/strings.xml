@@ -3,4 +3,12 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    
+    <string name="network_error">can not connect to server,check your network please!</string>
+    <string name="network_conversion">An exception while (de)serializing</string>
+    <string name="network_500">server error,please contact us!</string>
+    <string name="network_404">not found!</string>
+    <string name="network_unexpected">unknown error</string>
+    <string name="network_error_default">server error unknown,please contact us!></string>
+
 </resources>
