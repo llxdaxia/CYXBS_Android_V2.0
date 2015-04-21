@@ -6,7 +6,7 @@ allprojects {
 
 ext {
 
-    applicationId               = "com.mredrcok.cyxbs"
+    applicationId               = "com.mredrock.cyxbs"
 
     //app
     androidCompileSdkVersion    = 22
@@ -14,8 +14,8 @@ ext {
     androidMinSdkVersion        = 14
     androidTargetSdkVersion     = 22
 
-    versionCode                 = 6
-    versionName                 = "V2.0"
+    versionCode                 = 5
+    versionName                 = "2.0"
 
     //libraries
     appcompatVersion            = '22.0.0'
