@@ -2,4 +2,50 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="nav_drawer_status_bar_offset">0dp</dimen>
+
+    <dimen name="navigation_drawer_width">304dp</dimen>
+    <dimen name="navdrawer_account_height">140dp</dimen>
+    <dimen name="keyline_1">16dp</dimen>
+
+    <dimen name="navdrawer_profile_image_size">64dp</dimen>
+
+    <dimen name="text_size_xsmall">11sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_xlarge">20sp</dimen>
+    <dimen name="text_size_diff_large_small">6sp</dimen>
+
+    <dimen name="card_corner_radius">2dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_elevation_medium">4dp</dimen>
+    <dimen name="card_elevation_large">6dp</dimen>
+    <dimen name="card_elevation_xlarge">8dp</dimen>
+
+    <dimen name="keyline_2">72dp</dimen>
+    <dimen name="keyline_2_minus_16dp">56dp</dimen>
+    <dimen name="keyline_2_session_detail">@dimen/keyline_2</dimen>
+
+    <dimen name="filterbar_height">48dp</dimen>
+    <dimen name="filter_spinner_width">0dp</dimen>
+    <integer name="filter_spinner_weight">1</integer>
+    <dimen name="spinner_left_padding">16dp</dimen>
+    <dimen name="test_online_dropdown_item_height">48dp</dimen>
+    <dimen name="test_online_spinner_width">200dp</dimen>
+
+    <color name="floating_edit_text_color">#ffc8c8c8</color>
+    <color name="floating_edit_text_highlighted_color">#ff3f51b5</color>
+    <color name="floating_edit_text_error_color">#DB4437</color>
+    <dimen name="floating_edit_text_underline_height">1dp</dimen>
+    <dimen name="floating_edit_text_underline_highlighted_height">2dp</dimen>
+
+    <!-- PaperButton Default -->
+    <dimen name="paper_text_size">15sp</dimen>
+    <color name="paper_text_color">#60000000</color>
+    <color name="paper_button_color">#ffffffff</color>
+    <color name="paper_button_shadow_color">#000000</color>
+    <dimen name="paper_button_corner_radius">2dp</dimen>
+    <dimen name="paper_padding">7dp</dimen>
 </resources>

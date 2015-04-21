@@ -2,7 +2,7 @@ package com.mredrock.cyxbs.util;
 
 import com.alibaba.fastjson.JSON;
 import com.mredrock.cyxbs.BuildConfig;
-import com.squareup.okhttp.MediaType;
+import com.orhanobut.logger.Logger;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -53,7 +53,7 @@ public class FastjsonConverter implements Converter {
             }
             result = sb.toString();
             if (BuildConfig.DEBUG) {
-                LogUtils.LOGD("Retrofit==>", "result=> " + result);
+                LogUtils.LOGJSON(result);
             }
             return JSON.parseObject(result, type);
         } catch (IOException e) {

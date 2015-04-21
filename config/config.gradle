@@ -14,7 +14,7 @@ ext {
     androidMinSdkVersion        = 14
     androidTargetSdkVersion     = 22
 
-    versionCode                 = 5
+    versionCode                 = 6
     versionName                 = "V2.0"
 
     //libraries
@@ -31,6 +31,7 @@ ext {
     daggerVersion               = '2.0'
     butterknifeVersion          = '6.1.0'
     frescoVersion               = '0.2.0+'
+    loggerVersion               = '1.8'
 
     appDependencies = [
             appcompat_v7        : "com.android.support:appcompat-v7:${appcompatVersion}",
@@ -47,7 +48,8 @@ ext {
             daggerCompiler      : "com.google.dagger:dagger-compiler:${daggerVersion}",
             butterknife         : "com.jakewharton:butterknife:${butterknifeVersion}",
             fresco              : "com.facebook.fresco:fresco:${frescoVersion}",
-            imagepipeline_okhttp: "com.facebook.fresco:imagepipeline-okhttp:${frescoVersion}"
+            imagepipeline_okhttp: "com.facebook.fresco:imagepipeline-okhttp:${frescoVersion}",
+            logger              : "com.orhanobut:logger:${loggerVersion}",
 
     ]
 

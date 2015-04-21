@@ -57,7 +57,8 @@ dependencies {
     compile appDependencies.activeandroid
     compile appDependencies.fastjson
     compile appDependencies.eventbus
-    compile appDependencies.dagger
+//    compile appDependencies.dagger
+//    compile appDependencies.daggerCompiler
     compile appDependencies.butterknife
-
+    compile appDependencies.logger
 }

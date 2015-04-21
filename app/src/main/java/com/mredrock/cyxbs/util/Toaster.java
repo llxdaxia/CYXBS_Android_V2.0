@@ -1,13 +1,14 @@
 package com.mredrock.cyxbs.util;
 
-import static android.widget.Toast.LENGTH_LONG;
-import static android.widget.Toast.LENGTH_SHORT;
 import android.app.Activity;
 import android.content.Context;
 import android.text.TextUtils;
 import android.widget.Toast;
 
 import java.text.MessageFormat;
+
+import static android.widget.Toast.LENGTH_LONG;
+import static android.widget.Toast.LENGTH_SHORT;
 /**
  * Kevin Sawicki <kevinsawicki@gmail.com>'s wishLists
  */

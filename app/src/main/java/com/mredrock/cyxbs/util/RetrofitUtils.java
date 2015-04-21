@@ -1,13 +1,10 @@
 package com.mredrock.cyxbs.util;
 
-import android.app.Activity;
 import android.content.Context;
-import android.widget.Toast;
 
 import com.mredrock.cyxbs.R;
 
 import retrofit.RetrofitError;
-import retrofit.client.Response;
 
 /**
  * Created by david on 4/13/15.

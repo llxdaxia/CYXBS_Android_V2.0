@@ -1,12 +1,8 @@
 package com.mredrock.cyxbs.util;
 
-import android.app.ActivityManager;
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-
-import java.util.List;
 
 /**
  * Created by david on 15/4/12.

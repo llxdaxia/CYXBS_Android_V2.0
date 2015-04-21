@@ -1,8 +1,9 @@
 package com.mredrock.cyxbs.util;
 
-import static android.content.Context.INPUT_METHOD_SERVICE;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+
+import static android.content.Context.INPUT_METHOD_SERVICE;
 
 /**
  * Kevin Sawicki <kevinsawicki@gmail.com>'s wishLists

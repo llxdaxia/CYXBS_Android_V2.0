@@ -1,17 +1,17 @@
 package com.mredrock.cyxbs.presenter.activity;
 
-import android.app.FragmentManager;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 
 import com.mredrock.cyxbs.presenter.activity.swipebacklayout.app.SwipeBackActivity;
-import com.mredrock.cyxbs.view.Vu;
+import com.mredrock.cyxbs.view.IVu;
 
 import de.greenrobot.event.EventBus;
 
 /**
  * @param <V>
  */
-public abstract class BasePresenterActivity<V extends Vu> extends SwipeBackActivity {
+public abstract class BasePresenterActivity<V extends IVu> extends SwipeBackActivity {
 
     protected V vu;
     protected FragmentManager fm;
@@ -21,7 +21,7 @@ public abstract class BasePresenterActivity<V extends Vu> extends SwipeBackActiv
     @Override
     protected final void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        fm = getFragmentManager();
+        fm = getSupportFragmentManager();
         bus = EventBus.getDefault();
         try {
             vu = getVuClass().newInstance();

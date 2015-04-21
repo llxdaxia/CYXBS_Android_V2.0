@@ -3,6 +3,7 @@ package com.mredrock.cyxbs.util;
 import android.util.Log;
 
 import com.mredrock.cyxbs.BuildConfig;
+import com.orhanobut.logger.Logger;
 
 /**
  * Created by david on 15/4/12.
@@ -31,21 +32,21 @@ public class LogUtils {
 
     public static void LOGD(String message) {
         if (BuildConfig.DEBUG || Log.isLoggable(LOG_PREFIX, Log.DEBUG)) {
-            Log.d(LOG_PREFIX, message);
+            Logger.d(LOG_PREFIX, message);
         }
     }
 
     public static void LOGD(final String tag, String message) {
         //noinspection PointlessBooleanExpression,ConstantConditions
         if (BuildConfig.DEBUG || Log.isLoggable(tag, Log.DEBUG)) {
-            Log.d(tag, message);
+            Logger.d(tag, message);
         }
     }
 
     public static void LOGD(final String tag, String message, Throwable cause) {
         //noinspection PointlessBooleanExpression,ConstantConditions
         if (BuildConfig.DEBUG || Log.isLoggable(tag, Log.DEBUG)) {
-            Log.v(tag, message, cause);
+            Logger.v(tag, message, cause);
         }
     }
 
@@ -58,57 +59,61 @@ public class LogUtils {
     public static void LOGV(final String tag, String message) {
         //noinspection PointlessBooleanExpression,ConstantConditions
         if (BuildConfig.DEBUG && Log.isLoggable(tag, Log.VERBOSE)) {
-            Log.v(tag, message);
+            Logger.v(tag, message);
         }
     }
 
     public static void LOGV(final String tag, String message, Throwable cause) {
         //noinspection PointlessBooleanExpression,ConstantConditions
         if (BuildConfig.DEBUG && Log.isLoggable(tag, Log.VERBOSE)) {
-            Log.v(tag, message, cause);
+            Logger.v(tag, message, cause);
         }
     }
 
     public static void LOGI(String message) {
         if (BuildConfig.DEBUG || Log.isLoggable(LOG_PREFIX, Log.DEBUG)) {
-            Log.i(LOG_PREFIX, message);
+            Logger.i(LOG_PREFIX, message);
         }
     }
 
     public static void LOGI(final String tag, String message) {
-        Log.i(tag, message);
+        Logger.i(tag, message);
     }
 
     public static void LOGI(final String tag, String message, Throwable cause) {
-        Log.i(tag, message, cause);
+        Logger.i(tag, message, cause);
     }
 
     public static void LOGW(String message) {
         if (BuildConfig.DEBUG || Log.isLoggable(LOG_PREFIX, Log.DEBUG)) {
-            Log.w(LOG_PREFIX, message);
+            Logger.w(LOG_PREFIX, message);
         }
     }
 
     public static void LOGW(final String tag, String message) {
-        Log.w(tag, message);
+        Logger.w(tag, message);
     }
 
     public static void LOGW(final String tag, String message, Throwable cause) {
-        Log.w(tag, message, cause);
+        Logger.w(tag, message, cause);
     }
 
     public static void LOGE(String message) {
         if (BuildConfig.DEBUG || Log.isLoggable(LOG_PREFIX, Log.DEBUG)) {
-            Log.e(LOG_PREFIX, message);
+            Logger.e(LOG_PREFIX, message);
         }
     }
 
     public static void LOGE(final String tag, String message) {
-        Log.e(tag, message);
+        Logger.e(tag, message);
     }
 
     public static void LOGE(final String tag, String message, Throwable cause) {
-        Log.e(tag, message, cause);
+        Logger.e(tag, message, cause);
+    }
+
+    public static void LOGJSON(String json){
+        Logger.json(json);
     }
 
     private LogUtils() {
