@@ -32,19 +32,19 @@ public class NavigationDrawerFragment extends BasePresenterFragment<NavVu> {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);//Necessary for clicking to open the drawer!!!
-        if(savedInstanceState != null){
+        if (savedInstanceState != null) {
             mFromSavedInstanceState = true;
         }
     }
 
-    @SuppressWarnings("unchecked")
+
     @Override
-    protected Class getVuClass() {
+    public Class<NavVu> getVuClass() {
         return NavVu.class;
     }
 
     @Override
-    protected void onBindVu() {
+    public void onBindVu() {
 
     }
 
@@ -53,7 +53,7 @@ public class NavigationDrawerFragment extends BasePresenterFragment<NavVu> {
         mDrawerLayout.setStatusBarBackground(R.color.theme_primary_dark);
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
 
-        mDrawerToggle = new ActionBarDrawerToggle(getActivity(),mDrawerLayout,R.string.navigation_drawer_open,R.string.navigation_drawer_close){
+        mDrawerToggle = new ActionBarDrawerToggle(getActivity(), mDrawerLayout, R.string.navigation_drawer_open, R.string.navigation_drawer_close) {
             @Override
             public void onDrawerClosed(View drawerView) {
                 super.onDrawerClosed(drawerView);
@@ -107,4 +107,5 @@ public class NavigationDrawerFragment extends BasePresenterFragment<NavVu> {
         }
         return super.onOptionsItemSelected(item);
     }
+
 }

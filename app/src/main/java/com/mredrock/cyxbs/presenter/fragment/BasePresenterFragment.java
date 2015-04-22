@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.mredrock.cyxbs.presenter.IPresenter;
 import com.mredrock.cyxbs.view.IVu;
 
 import de.greenrobot.event.EventBus;
@@ -15,7 +16,7 @@ import de.greenrobot.event.EventBus;
  * Created by david on 4/13/15.
  * email: yangcheng0816@gmail.com
  */
-public abstract class BasePresenterFragment<V extends IVu> extends Fragment {
+public abstract class BasePresenterFragment<V extends IVu> extends Fragment implements IPresenter<V>{
 
     protected V vu;
     protected EventBus bus;
@@ -27,7 +28,7 @@ public abstract class BasePresenterFragment<V extends IVu> extends Fragment {
     }
 
     @Override
-    public final View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = null;
         try {
             vu = getVuClass().newInstance();
@@ -43,7 +44,6 @@ public abstract class BasePresenterFragment<V extends IVu> extends Fragment {
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
         onBindVu();
     }
 
@@ -54,17 +54,13 @@ public abstract class BasePresenterFragment<V extends IVu> extends Fragment {
         super.onDestroyView();
     }
 
-    protected void onDestroyVu() {
-    }
-
     @Override
     public final void onPause() {
         beforePause();
         super.onPause();
     }
 
-    protected void beforePause() {
-    }
+    protected void beforePause(){}
 
     @Override
     public final void onResume() {
@@ -72,12 +68,10 @@ public abstract class BasePresenterFragment<V extends IVu> extends Fragment {
         afterResume();
     }
 
-    protected void afterResume() {
+    protected void afterResume(){}
+
+    @Override
+    public void onDestroyVu() {
+
     }
-
-    protected void onBindVu() {
-    }
-
-    protected abstract Class<V> getVuClass();
-
 }

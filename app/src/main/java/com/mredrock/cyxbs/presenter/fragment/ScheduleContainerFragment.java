@@ -12,11 +12,16 @@ public class ScheduleContainerFragment extends BasePresenterFragment<ScheduleCon
         // Required empty public constructor
     }
 
-
     @Override
-    protected Class<ScheduleContainerVu> getVuClass() {
+    public Class<ScheduleContainerVu> getVuClass() {
         return ScheduleContainerVu.class;
     }
+
+    @Override
+    public void onBindVu() {
+
+    }
+
 
     public static ScheduleContainerFragment newInstance(){
         return new ScheduleContainerFragment();

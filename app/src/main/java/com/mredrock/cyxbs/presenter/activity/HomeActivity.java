@@ -10,17 +10,23 @@ public class HomeActivity extends BasePresenterActivity<MainVu> {
     private NavigationDrawerFragment mNavigationDrawerFragment;
 
     @Override
-    protected Class<MainVu> getVuClass() {
-        return MainVu.class;
-    }
-
-    @Override
     protected boolean shouldSwipeBack() {
         return false;
     }
 
+    public void configureToolbar() {
+        setSupportActionBar(vu.getToolbar());
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
     @Override
-    protected void onBindVu() {
+    public Class<MainVu> getVuClass() {
+        return MainVu.class;
+    }
+
+    @Override
+    public void onBindVu() {
         fm.beginTransaction()
                 .replace(vu.getContainerId(), ScheduleContainerFragment.newInstance())
                 .commit();
@@ -29,9 +35,5 @@ public class HomeActivity extends BasePresenterActivity<MainVu> {
         mNavigationDrawerFragment.configureDrawer(vu.getDrawerLayout());
     }
 
-    public void configureToolbar(){
-        setSupportActionBar(vu.getToolbar());
-        getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-    }
+
 }
