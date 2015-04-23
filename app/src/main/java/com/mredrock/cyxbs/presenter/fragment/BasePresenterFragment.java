@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 
 import com.mredrock.cyxbs.presenter.IPresenter;
 import com.mredrock.cyxbs.view.IVu;
+import com.mredrock.cyxbs.view.impl.AbsFragmentVu;
 
 import de.greenrobot.event.EventBus;
 
@@ -16,7 +17,7 @@ import de.greenrobot.event.EventBus;
  * Created by david on 4/13/15.
  * email: yangcheng0816@gmail.com
  */
-public abstract class BasePresenterFragment<V extends IVu> extends Fragment implements IPresenter<V>{
+public abstract class BasePresenterFragment<V extends AbsFragmentVu> extends Fragment implements IPresenter<V>{
 
     protected V vu;
     protected EventBus bus;

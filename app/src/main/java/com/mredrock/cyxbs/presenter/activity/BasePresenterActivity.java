@@ -6,18 +6,18 @@ import android.support.v4.app.FragmentManager;
 import com.mredrock.cyxbs.presenter.IPresenter;
 import com.mredrock.cyxbs.presenter.activity.swipebacklayout.app.SwipeBackActivity;
 import com.mredrock.cyxbs.view.IVu;
+import com.mredrock.cyxbs.view.impl.AbsActivityVu;
 
 import de.greenrobot.event.EventBus;
 
 /**
  * @param <V>
  */
-public abstract class BasePresenterActivity<V extends IVu> extends SwipeBackActivity implements IPresenter<V>{
+public abstract class BasePresenterActivity<V extends AbsActivityVu> extends SwipeBackActivity implements IPresenter<V>{
 
     protected V vu;
     protected FragmentManager fm;
     protected EventBus bus;
-
 
     @Override
     protected final void onCreate(Bundle savedInstanceState) {
