@@ -3,20 +3,21 @@ package com.mredrock.cyxbs.presenter.activity;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 
+import com.mredrock.cyxbs.presenter.IPresenter;
 import com.mredrock.cyxbs.presenter.activity.swipebacklayout.app.SwipeBackActivity;
 import com.mredrock.cyxbs.view.IVu;
+import com.mredrock.cyxbs.view.impl.AbsActivityVu;
 
 import de.greenrobot.event.EventBus;
 
 /**
  * @param <V>
  */
-public abstract class BasePresenterActivity<V extends IVu> extends SwipeBackActivity {
+public abstract class BasePresenterActivity<V extends AbsActivityVu> extends SwipeBackActivity implements IPresenter<V>{
 
     protected V vu;
     protected FragmentManager fm;
     protected EventBus bus;
-
 
     @Override
     protected final void onCreate(Bundle savedInstanceState) {
@@ -72,14 +73,11 @@ public abstract class BasePresenterActivity<V extends IVu> extends SwipeBackActi
         return false;
     }
 
-    protected abstract Class<V> getVuClass();
-
     protected abstract boolean shouldSwipeBack();
 
-    protected void onBindVu() {
-    }
+    @Override
+    public void onDestroyVu() {
 
-    protected void onDestroyVu() {
     }
 
 }
