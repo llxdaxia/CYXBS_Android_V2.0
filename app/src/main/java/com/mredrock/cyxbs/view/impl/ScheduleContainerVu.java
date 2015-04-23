@@ -11,12 +11,12 @@ import com.mredrock.cyxbs.view.IVu;
  * Created by david on 4/15/15.
  * email: yangcheng0816@gmail.com
  */
-public class ScheduleContainerVu implements IVu {
+public class ScheduleContainerVu extends AbsFragmentVu {
     View view;
 
     @Override
-    public void init(LayoutInflater inflater, ViewGroup container) {
-        view = inflater.inflate(R.layout.fragment_schedule_container,container,false);
+    public void onCreateView(LayoutInflater inflater, ViewGroup container) {
+        view = inflater.inflate(R.layout.fragment_schedule_container, container, false);
     }
 
     @Override
