@@ -2,14 +2,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/theme_accent_2"
-    android:paddingTop="@dimen/nav_drawer_status_bar_offset"
+    android:background="@android:color/white"
     tools:context="com.mredrock.cyxbs.presenter.fragment.NavigationDrawerFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
+        android:id="@+id/drawer_all"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"/>
 
 </FrameLayout>

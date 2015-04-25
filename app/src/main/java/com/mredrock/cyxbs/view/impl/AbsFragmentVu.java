@@ -6,6 +6,8 @@ import android.view.ViewGroup;
 
 import com.mredrock.cyxbs.view.IVu;
 
+import butterknife.ButterKnife;
+
 /**
  * Created by David on 15/4/23.
  */

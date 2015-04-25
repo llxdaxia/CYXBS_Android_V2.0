@@ -22,7 +22,6 @@ public class ScheduleContainerFragment extends BasePresenterFragment<ScheduleCon
 
     }
 
-
     public static ScheduleContainerFragment newInstance(){
         return new ScheduleContainerFragment();
     }

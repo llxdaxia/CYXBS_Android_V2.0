@@ -12,11 +12,6 @@
         <include
             android:id="@+id/toolbar"
             layout="@layout/include_toolbar"/>
-        <include
-            android:layout_below="@id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="8dp"
-            layout="@layout/include_toolbar_shadow"/>
 
         <FrameLayout
             android:id="@+id/container"
@@ -32,7 +27,6 @@
         android:layout_width="@dimen/navigation_drawer_width"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:elevation="10dp"
         android:clickable="true"
         android:fitsSystemWindows="true"
         app:insetForeground="#4000">
