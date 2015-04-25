@@ -5,6 +5,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -45,11 +46,8 @@ public class HomeVu extends AbsActivityVu {
         return containerView.getId();
     }
 
-    public boolean isDrawerOpen() {
-        return mDrawerLayout != null && mDrawerLayout.isDrawerOpen(GravityCompat.START);
-    }
-
     public void configureDrawer(final ActionBarActivity activity) {
+
         mDrawerToggle = new ActionBarDrawerToggle(activity, mDrawerLayout, R.string.navigation_drawer_open, R.string.navigation_drawer_close) {
             @Override
             public void onDrawerClosed(View drawerView) {
@@ -63,7 +61,10 @@ public class HomeVu extends AbsActivityVu {
                 activity.supportInvalidateOptionsMenu();
             }
         };
+
         mDrawerLayout.setDrawerListener(mDrawerToggle);
+        mDrawerLayout.setStatusBarBackground(R.color.theme_primary_dark);
+        mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
         mDrawerLayout.post(new Runnable() {
             @Override
             public void run() {
@@ -72,16 +73,18 @@ public class HomeVu extends AbsActivityVu {
         });
     }
 
-    public boolean onDrawerToggleSelected(MenuItem item) {
-        if (mDrawerToggle.onOptionsItemSelected(item)) {
-            return true;
+    public void closeDrawer() {
+        if (mDrawerLayout != null) {
+            mDrawerLayout.closeDrawer(GravityCompat.START);
         }
-        return false;
+    }
+
+    public boolean onDrawerToggleSelected(MenuItem item) {
+        return mDrawerToggle.onOptionsItemSelected(item);
     }
 
     public void onConfigurationChanged(Configuration newConfig) {
         mDrawerToggle.onConfigurationChanged(newConfig);
-
     }
 
 }

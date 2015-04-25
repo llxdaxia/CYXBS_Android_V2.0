@@ -34,6 +34,7 @@ public abstract class BasePresenterFragment<V extends AbsFragmentVu> extends Fra
         try {
             vu = getVuClass().newInstance();
             vu.init(inflater, container);
+            onBindVu();
             view = vu.getView();
         } catch (java.lang.InstantiationException e) {
             e.printStackTrace();
