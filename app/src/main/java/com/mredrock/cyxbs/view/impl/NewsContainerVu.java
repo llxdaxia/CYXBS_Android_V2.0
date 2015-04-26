@@ -5,18 +5,16 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.mredrock.cyxbs.R;
-import com.mredrock.cyxbs.view.IVu;
 
 /**
- * Created by david on 4/15/15.
- * email: yangcheng0816@gmail.com
+ * Created by David on 15/4/25.
  */
-public class ScheduleContainerVu extends AbsFragmentVu {
+public class NewsContainerVu extends AbsFragmentVu {
     View view;
 
     @Override
     public void onCreateView(LayoutInflater inflater, ViewGroup container) {
-        view = inflater.inflate(R.layout.fragment_schedule_container, container, false);
+        view = inflater.inflate(R.layout.fragment_news_container, container, false);
     }
 
     @Override
