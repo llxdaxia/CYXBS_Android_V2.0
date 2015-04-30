@@ -46,6 +46,10 @@ public class HomeVu extends AbsActivityVu {
         return containerView.getId();
     }
 
+    /**
+     * 配置抽屉
+     * @param activity Activity对象
+     */
     public void configureDrawer(final ActionBarActivity activity) {
 
         mDrawerToggle = new ActionBarDrawerToggle(activity, mDrawerLayout, R.string.navigation_drawer_open, R.string.navigation_drawer_close) {

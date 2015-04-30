@@ -59,16 +59,32 @@ public abstract class AbsActivityVu implements IVu {
         }
     }
 
+    /**
+     * 如果xml里面没有toolbar的话这里一定要返回false
+     * @return 是否要显示Toolbar
+     */
     public abstract boolean shouldToolbarShow();
 
+    /**
+     * Toolbar的箭头要不要显示呀
+     * @return 是否显示箭头
+     */
     public abstract boolean shouldArrowShow();
 
+    /**
+     *设置显示标题的内容
+     * @param title 标题内容
+     */
     public void setLabel(CharSequence title) {
         if (mToolbar != null) {
             mToolbar.setTitle(title);
         }
     }
 
+    /**
+     * 设置显示标题的内容
+     * @param stringResID 标题内容的资源id
+     */
     public void setLabel(@StringRes int stringResID) {
         if (mToolbar != null) {
             mToolbar.setTitle(stringResID);

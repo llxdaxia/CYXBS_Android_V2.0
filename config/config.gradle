@@ -30,7 +30,7 @@ ext {
     eventbusVersion             = '2.4.0'
     daggerVersion               = '2.0'
     butterknifeVersion          = '6.1.0'
-    frescoVersion               = '0.2.0+'
+    frescoVersion               = '0.4.0+'
     loggerVersion               = '1.8'
 
     appDependencies = [

@@ -1,17 +1,10 @@
 package com.mredrock.cyxbs.presenter.fragment;
 
 
-import android.os.Bundle;
-import android.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-import com.mredrock.cyxbs.R;
 import com.mredrock.cyxbs.view.impl.NewsContainerVu;
 
 /**
- * A simple {@link Fragment} subclass.
+ * 新闻界面的fragment容器
  */
 public class NewsContainerFragment extends BasePresenterFragment<NewsContainerVu> {
 
