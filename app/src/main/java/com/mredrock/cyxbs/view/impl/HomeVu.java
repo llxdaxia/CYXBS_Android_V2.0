@@ -5,6 +5,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
@@ -48,9 +49,10 @@ public class HomeVu extends AbsActivityVu {
 
     /**
      * 配置抽屉
+     *
      * @param activity Activity对象
      */
-    public void configureDrawer(final ActionBarActivity activity) {
+    public void configureDrawer(final AppCompatActivity activity) {
 
         mDrawerToggle = new ActionBarDrawerToggle(activity, mDrawerLayout, R.string.navigation_drawer_open, R.string.navigation_drawer_close) {
             @Override
@@ -81,6 +83,10 @@ public class HomeVu extends AbsActivityVu {
         if (mDrawerLayout != null) {
             mDrawerLayout.closeDrawer(GravityCompat.START);
         }
+    }
+
+    public boolean isDrawerOpen() {
+        return mDrawerLayout != null && mDrawerLayout.isDrawerOpen(GravityCompat.START);
     }
 
     public boolean onDrawerToggleSelected(MenuItem item) {

@@ -2,13 +2,13 @@
 package com.mredrock.cyxbs.presenter.activity.swipebacklayout.app;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.mredrock.cyxbs.presenter.activity.swipebacklayout.SwipeBackLayout;
 import com.mredrock.cyxbs.presenter.activity.swipebacklayout.Utils;
 
-public class SwipeBackActivity extends ActionBarActivity implements SwipeBackActivityBase {
+public class SwipeBackActivity extends AppCompatActivity implements SwipeBackActivityBase {
     private SwipeBackActivityHelper mHelper;
 
     @Override

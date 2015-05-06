@@ -18,10 +18,10 @@ ext {
     versionName                 = "2.0"
 
     //libraries
-    appcompatVersion            = '22.0.0'
-    cardviewVersion             = '22.0.0'
-    paletteVersion              = '22.0.0'
-    recyclerviewVersion         = '22.0.0'
+    appcompatVersion            = '22.1.1'
+    cardviewVersion             = '22.1.1'
+    paletteVersion              = '22.1.1'
+    recyclerviewVersion         = '22.1.1'
     retrofitVersion             = '1.9.0'
     okhttpVersion               = '2.0.0'
     okhttp_urlconnectionVersion = '2.3.0'

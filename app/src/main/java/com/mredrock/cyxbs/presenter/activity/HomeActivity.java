@@ -3,6 +3,7 @@ package com.mredrock.cyxbs.presenter.activity;
 import android.content.res.Configuration;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.MenuItem;
 
 import com.mredrock.cyxbs.model.event.NavEvent;
@@ -45,6 +46,10 @@ public class HomeActivity extends BasePresenterActivity<HomeVu> {
     @Override
     public boolean handleBackPressed() {
         bus.removeAllStickyEvents();
+        if(vu.isDrawerOpen()){
+            vu.closeDrawer();
+            return true;
+        }
         return false;
     }
 
