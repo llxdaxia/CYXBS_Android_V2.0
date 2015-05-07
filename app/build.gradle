@@ -34,6 +34,7 @@ android {
         exclude 'META-INF/NOTICE'
         exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'META-INF/MANIFEST.MF'
     }
 }
 
@@ -43,6 +44,8 @@ repositories {
 }
 
 dependencies {
+    compile project(':domain')
+
     def appDependencies = rootProject.ext.appDependencies
 
     compile fileTree(include: ['*.jar'], dir: 'libs')
