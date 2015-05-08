@@ -1,7 +1,27 @@
-apply plugin: 'java'
+apply plugin: 'com.android.library'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'me.tatarka.retrolambda'
+//apply plugin: 'java' //wtf can not depends on model!!!
+//sourceCompatibility = 1.6
+//targetCompatibility = 1.6
 
-sourceCompatibility = 1.6
-targetCompatibility = 1.6
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion globalConfiguration.getAt("androidCompileSdkVersion")
+    buildToolsVersion globalConfiguration.getAt("androidBuildToolsVersion")
+
+    defaultConfig {
+        minSdkVersion globalConfiguration.getAt("androidMinSdkVersion")
+        targetSdkVersion globalConfiguration.getAt("androidTargetSdkVersion")
+        versionCode globalConfiguration.getAt("versionCode")
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
 
 configurations {
     provided
@@ -15,5 +35,6 @@ sourceSets {
 
 dependencies {
     compile project(':model')
+
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }

@@ -2,6 +2,139 @@
 <items version="2" >
 
     <item
+        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-57ac323538741293a4e74bd3290ef13b198a8ddf.jar" />
+    </item>
+    <item
+        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-33a3d194e1608ddcd2ab0acb6bd83b0d691f9b5f.jar" />
+    </item>
+    <item
+        jar="/Users/David/Dev/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-98ff055914492d364c337ae2e4e910a0736a5b56.jar" />
+    </item>
+    <item
+        jar="/Users/David/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/gson-2.3.1-c9df20e9878a1b303be429ab7f120fab25d2c795.jar" />
+    </item>
+    <item
+        jar="/Users/David/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp-urlconnection/2.3.0/4f12ec1e1455909e1f0b8530c719c90b2d01745/okhttp-urlconnection-2.3.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="04f12ec1e1455909e1f0b8530c719c90b2d01745">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-2.3.0-5c8f7efc1e2162a25232b79d09278bdff5150ea6.jar" />
+    </item>
+    <item
+        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/CYXBS_Android_V2.0/model/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e03860f922ab8650f4049aee2da587a11af29994">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-28dcf1007366d287d22ae37809d608afded1309e.jar" />
+    </item>
+    <item
+        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/CYXBS_Android_V2.0/domain/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3826abe8655a2d633652aa0f5ce2d9c96521ffad">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-73088d81137899ab3dd0c610647bea05f43a787e.jar" />
+    </item>
+    <item
+        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="df1d19ffd5bf419ac873e46e38dd8ad2ad418d34">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-c4a17debaaedfb4c922fe7a0edbecc1bf12f3157.jar" />
+    </item>
+    <item
+        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.orhanobut/logger/1.8/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="905a1a3170bf8e5f07e14217f5bdc2348f1425ca">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-0daf780ed8c000279cd4a221bdbcd2f39303b525.jar" />
+    </item>
+    <item
+        jar="/Users/David/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-cdcbb79c448ff949ecbaed30bc8c62379b1b597f.jar" />
+    </item>
+    <item
+        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.android.support/palette-v7/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="33b976f9f7b8439e04f08bc0bb2fa70dfd777263">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-5ffdd924b602f399a9e169644f5c0cc61dc61b89.jar" />
+    </item>
+    <item
+        jar="/Users/David/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.3.0/2e7bc7033dc2c8423e661224171b3133fb155b28/okhttp-2.3.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2e7bc7033dc2c8423e661224171b3133fb155b28">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/okhttp-2.3.0-43690ba6a26ff76269df37f89f9a4b3e3f2ce684.jar" />
+    </item>
+    <item
+        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e0b0c35d02308b270015a74cada4887e2e49b889">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-fa56a7a8a776b80e97e69480f8931ae38f7be805.jar" />
+    </item>
+    <item
+        jar="/Users/David/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/6.1.0/63735f48b82bcd24cdd33821342428252eb1ca5a/butterknife-6.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="63735f48b82bcd24cdd33821342428252eb1ca5a">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/butterknife-6.1.0-53ccb398bde41b293501cdc222d6af5c048dc759.jar" />
+    </item>
+    <item
+        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-2e3b55e8d0ac5985e03b73fb58b23b0ba96069dc.jar" />
+    </item>
+    <item
+        jar="/Users/David/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/retrofit-1.9.0-a010f8e1aeaef75d7528c9025b0f2939125f3630.jar" />
+    </item>
+    <item
+        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="49781e30ff63790fd279eaa920ead5aff2a523aa">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-24caed1383b78bccb0e832db4876fb8022d6dccf.jar" />
+    </item>
+    <item
+        jar="/Users/David/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.0/da7ba0ee1d30edd955da276cdf01d3d7cb24aedc/dagger-2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="da7ba0ee1d30edd955da276cdf01d3d7cb24aedc">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/dagger-2.0-36115d04a2a423d840154002bf1fe9aa9ba22ff0.jar" />
+    </item>
+    <item
+        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ce3ade9267254f83caa1faf671b1c7b92f2feb64">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-69b53c52b18f09113a1e24628ffab4110aa3e3ab.jar" />
+    </item>
+    <item
         jar="/Users/David/.gradle/caches/modules-2/files-2.1/com.alibaba/fastjson/1.1.45.android/4d5140a0c8f5e4d0f263cac44dbac1019a908474/fastjson-1.1.45.android.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -16,81 +149,11 @@
         <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/library-2.4.0-11684bf2e1d13a3f1556135faf6e55908e6298b6.jar" />
     </item>
     <item
-        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="ce3ade9267254f83caa1faf671b1c7b92f2feb64">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-69b53c52b18f09113a1e24628ffab4110aa3e3ab.jar" />
-    </item>
-    <item
         jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp/0.4.0/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="510724f215c7662adddc63dbf0287bfa7093b627">
         <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-5aa37d3cbcbf43a84030a6830b1e3fefd1dcea89.jar" />
-    </item>
-    <item
-        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="49781e30ff63790fd279eaa920ead5aff2a523aa">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-24caed1383b78bccb0e832db4876fb8022d6dccf.jar" />
-    </item>
-    <item
-        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="d7e17662c3c6d3ca342a57652947bbcd8a67bc9a">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-94489efe03d5bd164380e0db2f9aff6e9e25095f.jar" />
-    </item>
-    <item
-        jar="/Users/David/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.3.0/1b355f73402020c5a0dcca58affc3ec3dfeabac1/okio-1.3.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1b355f73402020c5a0dcca58affc3ec3dfeabac1">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/okio-1.3.0-d5621eb2db421f171eba39e7b1859ade9c78e6e3.jar" />
-    </item>
-    <item
-        jar="/Users/David/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.0/da7ba0ee1d30edd955da276cdf01d3d7cb24aedc/dagger-2.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="da7ba0ee1d30edd955da276cdf01d3d7cb24aedc">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/dagger-2.0-36115d04a2a423d840154002bf1fe9aa9ba22ff0.jar" />
-    </item>
-    <item
-        jar="/Users/David/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/javax.inject-1-b74bdf00a6ab82dce787e35bf0c517463058fec6.jar" />
-    </item>
-    <item
-        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.android.support/palette-v7/22.1.1/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="33b976f9f7b8439e04f08bc0bb2fa70dfd777263">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-5ffdd924b602f399a9e169644f5c0cc61dc61b89.jar" />
-    </item>
-    <item
-        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-2e3b55e8d0ac5985e03b73fb58b23b0ba96069dc.jar" />
-    </item>
-    <item
-        jar="/Users/David/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="129874135e6081269ace2312092031558865de12">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-cdcbb79c448ff949ecbaed30bc8c62379b1b597f.jar" />
-    </item>
-    <item
-        jar="/Users/David/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/6.1.0/63735f48b82bcd24cdd33821342428252eb1ca5a/butterknife-6.1.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="63735f48b82bcd24cdd33821342428252eb1ca5a">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/butterknife-6.1.0-53ccb398bde41b293501cdc222d6af5c048dc759.jar" />
     </item>
     <item
         jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.1.1/jars/classes.jar"
@@ -100,60 +163,11 @@
         <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-1e9724909c1476e15179ac2bad5e5b84baf803f4.jar" />
     </item>
     <item
-        jar="/Users/David/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar"
+        jar="/Users/David/.gradle/caches/modules-2/files-2.1/de.greenrobot/eventbus/2.4.0/ddd166d01b3158d1c00576d29f7ed15c030df719/eventbus-2.4.0.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="a681c044244d9fc375198588297a39ba78028423">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/retrofit-1.9.0-a010f8e1aeaef75d7528c9025b0f2939125f3630.jar" />
-    </item>
-    <item
-        jar="/Users/David/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp-urlconnection/2.3.0/4f12ec1e1455909e1f0b8530c719c90b2d01745/okhttp-urlconnection-2.3.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="04f12ec1e1455909e1f0b8530c719c90b2d01745">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-2.3.0-5c8f7efc1e2162a25232b79d09278bdff5150ea6.jar" />
-    </item>
-    <item
-        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/domain/build/libs/domain.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="e196176ad1464fa7eb853a4a0cd635abbc67c496">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/domain-2f40f76981c7e58492a4228602677c7553069723.jar" />
-    </item>
-    <item
-        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-57ac323538741293a4e74bd3290ef13b198a8ddf.jar" />
-    </item>
-    <item
-        jar="/Users/David/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/gson-2.3.1-c9df20e9878a1b303be429ab7f120fab25d2c795.jar" />
-    </item>
-    <item
-        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-33a3d194e1608ddcd2ab0acb6bd83b0d691f9b5f.jar" />
-    </item>
-    <item
-        jar="/Users/David/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.3.0/2e7bc7033dc2c8423e661224171b3133fb155b28/okhttp-2.3.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="2e7bc7033dc2c8423e661224171b3133fb155b28">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/okhttp-2.3.0-43690ba6a26ff76269df37f89f9a4b3e3f2ce684.jar" />
-    </item>
-    <item
-        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.orhanobut/logger/1.8/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="905a1a3170bf8e5f07e14217f5bdc2348f1425ca">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-0daf780ed8c000279cd4a221bdbcd2f39303b525.jar" />
+        sha1="ddd166d01b3158d1c00576d29f7ed15c030df719">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/eventbus-2.4.0-c116f6caf3c00ff81fc277c1cabb2c640b5f1260.jar" />
     </item>
     <item
         jar="/Users/David/.gradle/caches/modules-2/files-2.1/com.michaelpardo/activeandroid/3.1.0-SNAPSHOT/4ab7b0182975bc57c49efc5e0b3baa4a10e4ec08/activeandroid-3.1.0-SNAPSHOT.jar"
@@ -163,39 +177,25 @@
         <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/activeandroid-3.1.0-SNAPSHOT-d9ec213ffb65bb73a505cedc9212813aab214a52.jar" />
     </item>
     <item
-        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.1.1/jars/classes.jar"
+        jar="/Users/David/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.3.0/1b355f73402020c5a0dcca58affc3ec3dfeabac1/okio-1.3.0.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="e0b0c35d02308b270015a74cada4887e2e49b889">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-fa56a7a8a776b80e97e69480f8931ae38f7be805.jar" />
+        sha1="1b355f73402020c5a0dcca58affc3ec3dfeabac1">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/okio-1.3.0-d5621eb2db421f171eba39e7b1859ade9c78e6e3.jar" />
     </item>
     <item
-        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.4.0/jars/classes.jar"
+        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.4.0/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="df1d19ffd5bf419ac873e46e38dd8ad2ad418d34">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-c4a17debaaedfb4c922fe7a0edbecc1bf12f3157.jar" />
+        sha1="d7e17662c3c6d3ca342a57652947bbcd8a67bc9a">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/classes-94489efe03d5bd164380e0db2f9aff6e9e25095f.jar" />
     </item>
     <item
-        jar="/Users/David/Dev/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
+        jar="/Users/David/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-98ff055914492d364c337ae2e4e910a0736a5b56.jar" />
-    </item>
-    <item
-        jar="/Users/David/.gradle/caches/modules-2/files-2.1/de.greenrobot/eventbus/2.4.0/ddd166d01b3158d1c00576d29f7ed15c030df719/eventbus-2.4.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="ddd166d01b3158d1c00576d29f7ed15c030df719">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/eventbus-2.4.0-c116f6caf3c00ff81fc277c1cabb2c640b5f1260.jar" />
-    </item>
-    <item
-        jar="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/model/build/libs/model.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="e389a4ebd42683c81bcd709b71bb3e61118cce83">
-        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/model-c68bbbec2119a9b17bb31237e6ca9da5bdaeb737.jar" />
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/David/Dev/Android/Android Studio WorkSpace/seancode/CYXBS_Android_V2.0/app/build/intermediates/pre-dexed/debug/javax.inject-1-b74bdf00a6ab82dce787e35bf0c517463058fec6.jar" />
     </item>
 
 </items>
