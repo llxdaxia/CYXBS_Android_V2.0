@@ -20,8 +20,9 @@ import butterknife.OnItemClick;
  */
 public class NavVu extends AbsFragmentVu {
 
-    private View view;
+    private View                 view;
     private IVuCallback<Integer> selectCallback;
+
     @InjectView(R.id.drawer_all)
     ListView mListView;
 

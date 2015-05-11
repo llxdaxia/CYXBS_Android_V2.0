@@ -13,6 +13,7 @@ import butterknife.ButterKnife;
  */
 public abstract class AbsFragmentVu implements IVu{
     private Context context;
+
     @Override
     public final void init(LayoutInflater inflater, ViewGroup container) {
         context = inflater.getContext();

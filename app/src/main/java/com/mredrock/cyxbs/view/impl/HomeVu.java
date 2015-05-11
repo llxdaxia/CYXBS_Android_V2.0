@@ -5,6 +5,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
@@ -46,7 +47,12 @@ public class HomeVu extends AbsActivityVu {
         return containerView.getId();
     }
 
-    public void configureDrawer(final ActionBarActivity activity) {
+    /**
+     * 配置抽屉
+     *
+     * @param activity Activity对象
+     */
+    public void configureDrawer(final AppCompatActivity activity) {
 
         mDrawerToggle = new ActionBarDrawerToggle(activity, mDrawerLayout, R.string.navigation_drawer_open, R.string.navigation_drawer_close) {
             @Override
@@ -65,18 +71,17 @@ public class HomeVu extends AbsActivityVu {
         mDrawerLayout.setDrawerListener(mDrawerToggle);
         mDrawerLayout.setStatusBarBackground(R.color.theme_primary_dark);
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
-        mDrawerLayout.post(new Runnable() {
-            @Override
-            public void run() {
-                mDrawerToggle.syncState();
-            }
-        });
+        mDrawerLayout.post(mDrawerToggle::syncState);
     }
 
     public void closeDrawer() {
         if (mDrawerLayout != null) {
             mDrawerLayout.closeDrawer(GravityCompat.START);
         }
+    }
+
+    public boolean isDrawerOpen() {
+        return mDrawerLayout != null && mDrawerLayout.isDrawerOpen(GravityCompat.START);
     }
 
     public boolean onDrawerToggleSelected(MenuItem item) {

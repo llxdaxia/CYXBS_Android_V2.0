@@ -4,9 +4,9 @@ package com.mredrock.cyxbs.presenter.fragment;
 import com.mredrock.cyxbs.view.impl.ScheduleContainerVu;
 
 /**
+ * 放课表的Fragment容器
  */
 public class ScheduleContainerFragment extends BasePresenterFragment<ScheduleContainerVu> {
-
 
     public ScheduleContainerFragment() {
         // Required empty public constructor

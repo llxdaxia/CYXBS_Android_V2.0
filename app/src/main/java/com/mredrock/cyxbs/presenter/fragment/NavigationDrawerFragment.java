@@ -1,7 +1,6 @@
 package com.mredrock.cyxbs.presenter.fragment;
 
 
-import android.app.Fragment;
 import android.os.Bundle;
 
 import com.mredrock.cyxbs.model.event.NavEvent;
@@ -9,12 +8,16 @@ import com.mredrock.cyxbs.presenter.adapter.NavigationDrawerAdapter;
 import com.mredrock.cyxbs.view.IVuCallback;
 import com.mredrock.cyxbs.view.impl.NavVu;
 
+import java.util.ArrayList;
+
 
 /**
- * A simple {@link Fragment} subclass.
+ * 抽屉的fragment
  */
 public class NavigationDrawerFragment extends BasePresenterFragment<NavVu> {
-    NavigationDrawerAdapter adapter = new NavigationDrawerAdapter();
+    NavigationDrawerAdapter adapter;
+    ArrayList<String> items = new ArrayList<>();
+
     IVuCallback<Integer> mCallback = new IVuCallback<Integer>() {
         @Override
         public void execute(Integer result) {
@@ -23,7 +26,11 @@ public class NavigationDrawerFragment extends BasePresenterFragment<NavVu> {
     };
 
     public NavigationDrawerFragment() {
-        // Required empty public constructor
+        items.add("课表");
+        items.add("安排");
+        items.add("资讯");
+        items.add("查询");
+        items.add("发现");
     }
 
     @Override
@@ -38,6 +45,7 @@ public class NavigationDrawerFragment extends BasePresenterFragment<NavVu> {
 
     @Override
     public void onBindVu() {
+        adapter = new NavigationDrawerAdapter(getActivity(), items);
         vu.setListAdapter(adapter);
         vu.setSelectCallback(mCallback);
     }

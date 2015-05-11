@@ -19,7 +19,7 @@ import de.greenrobot.event.EventBus;
  */
 public abstract class BasePresenterFragment<V extends AbsFragmentVu> extends Fragment implements IPresenter<V>{
 
-    protected V vu;
+    protected V        vu;
     protected EventBus bus;
 
     @Override
