@@ -6,19 +6,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
-import com.mredrock.cyxbs.view.BaseItemVuHolder;
-import com.mredrock.cyxbs.view.IVu;
+import com.mredrock.cyxbs.view.impl.AbsItemVuHolder;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
-import java.util.Set;
 
 /**
  * 高度抽象的Adapter，当然是用于ListView的，包含了数据的增删改功能，已经将getView()方法简单化
  * Created by David on 15/4/24.
  */
-public abstract class BasePresenterAdapter<T, V extends BaseItemVuHolder> extends BaseAdapter {
+public abstract class BasePresenterAdapter<T, V extends AbsItemVuHolder> extends BaseAdapter {
     protected V vu;
     private Context mContext;//万一要用呢
     private int          page   = 0;

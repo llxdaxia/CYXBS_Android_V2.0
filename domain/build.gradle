@@ -33,8 +33,23 @@ sourceSets {
     }
 }
 
+repositories {
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+}
+
 dependencies {
     compile project(':model')
 
     compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    def domainDependencies = rootProject.ext.domainDependencies
+
+//    apt dataDependencies.daggerCompiler
+    provided domainDependencies.daggerCompiler
+    provided domainDependencies.javaxAnnotation
+
+    compile domainDependencies.dagger
+    compile domainDependencies.rxJava
+    compile domainDependencies.eventbus
 }

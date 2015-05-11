@@ -33,6 +33,27 @@ sourceSets {
     }
 }
 
+repositories {
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    def modelDependencies = rootProject.ext.modelDependencies
+
+    apt modelDependencies.daggerCompiler
+
+    provided modelDependencies.javaxAnnotation
+
+    compile modelDependencies.dagger
+    compile modelDependencies.okhttp
+    compile modelDependencies.okhttp_urlconnection
+    compile modelDependencies.retrofit
+    compile modelDependencies.activeandroid
+    compile modelDependencies.eventbus
+    compile modelDependencies.rxJava
+    compile modelDependencies.rxAndroid
+    compile modelDependencies.logger
+    compile modelDependencies.fastjson
 }

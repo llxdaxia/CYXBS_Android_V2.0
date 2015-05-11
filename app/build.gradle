@@ -59,16 +59,12 @@ dependencies {
     compile appDependencies.cardview
     compile appDependencies.palette
     compile appDependencies.recyclerview
-    compile appDependencies.retrofit
-    compile appDependencies.okhttp
-    compile appDependencies.okhttp_urlconnection
     compile appDependencies.fresco
     compile appDependencies.imagepipeline_okhttp
-    compile appDependencies.activeandroid
-    compile appDependencies.fastjson
     compile appDependencies.eventbus
     compile appDependencies.butterknife
     compile appDependencies.logger
     compile appDependencies.dagger
+
     apt appDependencies.daggerCompiler
 }

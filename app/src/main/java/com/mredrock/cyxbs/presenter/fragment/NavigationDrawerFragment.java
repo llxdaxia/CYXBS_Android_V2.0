@@ -18,12 +18,7 @@ public class NavigationDrawerFragment extends BasePresenterFragment<NavVu> {
     NavigationDrawerAdapter adapter;
     ArrayList<String> items = new ArrayList<>();
 
-    IVuCallback<Integer> mCallback = new IVuCallback<Integer>() {
-        @Override
-        public void execute(Integer result) {
-            bus.postSticky(new NavEvent(result));
-        }
-    };
+    IVuCallback<Integer> mCallback = result -> bus.postSticky(new NavEvent(result));
 
     public NavigationDrawerFragment() {
         items.add("课表");
