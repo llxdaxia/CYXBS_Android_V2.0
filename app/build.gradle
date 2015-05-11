@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'me.tatarka.retrolambda'
 
 android {
     def globalConfiguration = rootProject.extensions.getByName("ext")
@@ -12,6 +14,11 @@ android {
         targetSdkVersion globalConfiguration.getAt("androidTargetSdkVersion")
         versionCode globalConfiguration.getAt("versionCode")
         versionName globalConfiguration.getAt("versionName")
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 
     buildTypes {
@@ -33,6 +40,7 @@ android {
         exclude 'META-INF/NOTICE'
         exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'META-INF/MANIFEST.MF'
     }
 }
 
@@ -42,6 +50,8 @@ repositories {
 }
 
 dependencies {
+    compile project(':domain')
+
     def appDependencies = rootProject.ext.appDependencies
 
     compile fileTree(include: ['*.jar'], dir: 'libs')
@@ -57,8 +67,8 @@ dependencies {
     compile appDependencies.activeandroid
     compile appDependencies.fastjson
     compile appDependencies.eventbus
-//    compile appDependencies.dagger
-//    compile appDependencies.daggerCompiler
     compile appDependencies.butterknife
     compile appDependencies.logger
+    compile appDependencies.dagger
+    apt appDependencies.daggerCompiler
 }

@@ -5,6 +5,8 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -45,11 +47,13 @@ public class HomeVu extends AbsActivityVu {
         return containerView.getId();
     }
 
-    public boolean isDrawerOpen() {
-        return mDrawerLayout != null && mDrawerLayout.isDrawerOpen(GravityCompat.START);
-    }
+    /**
+     * 配置抽屉
+     *
+     * @param activity Activity对象
+     */
+    public void configureDrawer(final AppCompatActivity activity) {
 
-    public void configureDrawer(final ActionBarActivity activity) {
         mDrawerToggle = new ActionBarDrawerToggle(activity, mDrawerLayout, R.string.navigation_drawer_open, R.string.navigation_drawer_close) {
             @Override
             public void onDrawerClosed(View drawerView) {
@@ -63,25 +67,29 @@ public class HomeVu extends AbsActivityVu {
                 activity.supportInvalidateOptionsMenu();
             }
         };
+
         mDrawerLayout.setDrawerListener(mDrawerToggle);
-        mDrawerLayout.post(new Runnable() {
-            @Override
-            public void run() {
-                mDrawerToggle.syncState();
-            }
-        });
+        mDrawerLayout.setStatusBarBackground(R.color.theme_primary_dark);
+        mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
+        mDrawerLayout.post(mDrawerToggle::syncState);
+    }
+
+    public void closeDrawer() {
+        if (mDrawerLayout != null) {
+            mDrawerLayout.closeDrawer(GravityCompat.START);
+        }
+    }
+
+    public boolean isDrawerOpen() {
+        return mDrawerLayout != null && mDrawerLayout.isDrawerOpen(GravityCompat.START);
     }
 
     public boolean onDrawerToggleSelected(MenuItem item) {
-        if (mDrawerToggle.onOptionsItemSelected(item)) {
-            return true;
-        }
-        return false;
+        return mDrawerToggle.onOptionsItemSelected(item);
     }
 
     public void onConfigurationChanged(Configuration newConfig) {
         mDrawerToggle.onConfigurationChanged(newConfig);
-
     }
 
 }
