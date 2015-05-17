@@ -3,7 +3,7 @@ package com.mredrock.cyxbs.presenter.fragment;
 
 import android.os.Bundle;
 
-import com.mredrock.cyxbs.model.event.NavEvent;
+import com.mredrock.cyxbs.data.event.NavEvent;
 import com.mredrock.cyxbs.presenter.adapter.NavigationDrawerAdapter;
 import com.mredrock.cyxbs.view.IVuCallback;
 import com.mredrock.cyxbs.view.impl.NavVu;
@@ -18,12 +18,7 @@ public class NavigationDrawerFragment extends BasePresenterFragment<NavVu> {
     NavigationDrawerAdapter adapter;
     ArrayList<String> items = new ArrayList<>();
 
-    IVuCallback<Integer> mCallback = new IVuCallback<Integer>() {
-        @Override
-        public void execute(Integer result) {
-            bus.postSticky(new NavEvent(result));
-        }
-    };
+    IVuCallback<Integer> mCallback = result -> bus.postSticky(new NavEvent(result));
 
     public NavigationDrawerFragment() {
         items.add("课表");

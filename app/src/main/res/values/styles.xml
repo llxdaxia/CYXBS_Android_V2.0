@@ -14,7 +14,7 @@
         <item name="android:windowNoTitle">true</item>
 
         <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowBackground">@android:color/white</item>
+        <!--<item name="android:windowBackground">@android:color/white</item>-->
         <item name="android:homeAsUpIndicator">@drawable/ic_up</item>
         <item name="android:actionMenuTextColor">#fff</item>
         <item name="actionBarIconColor">#fff</item>
@@ -23,6 +23,20 @@
         <item name="popupItemBackground">?android:selectableItemBackground</item>
         <item name="photoItemForeground">?android:selectableItemBackground</item>
         <item name="photoItemForegroundBorderless">?android:selectableItemBackground</item>
+    </style>
+
+    <style name="APPTheme.StartLoad" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="APPTheme.Login" parent="AppTheme.Base">
+        <item name="android:windowBackground">@color/grey</item>
+    </style>
+
+    <style name="AppTheme" parent="AppTheme.Base">
+
     </style>
 
     <style name="SwipeBackLayout">

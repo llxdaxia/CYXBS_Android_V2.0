@@ -3,10 +3,8 @@ package com.mredrock.cyxbs.view.impl;
 import android.content.res.Configuration;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -48,9 +46,9 @@ public class HomeVu extends AbsActivityVu {
     }
 
     /**
-     * 配置抽屉
+     * Configure drawer
      *
-     * @param activity Activity对象
+     * @param activity Activity
      */
     public void configureDrawer(final AppCompatActivity activity) {
 
