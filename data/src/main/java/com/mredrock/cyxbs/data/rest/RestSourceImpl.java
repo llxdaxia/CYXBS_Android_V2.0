@@ -8,15 +8,10 @@ import com.mredrock.cyxbs.common.Constants;
 import com.mredrock.cyxbs.data.entities.CourseEntity;
 import com.mredrock.cyxbs.data.entities.NewsEntity;
 import com.mredrock.cyxbs.data.entities.UserEntity;
-import com.mredrock.cyxbs.model.BuildConfig;
-import com.orhanobut.logger.Logger;
 
 import java.util.List;
 
-import retrofit.Callback;
 import retrofit.RestAdapter;
-import retrofit.RetrofitError;
-import retrofit.client.Response;
 import rx.Observable;
 
 /**
@@ -27,7 +22,7 @@ import rx.Observable;
  */
 public class RestSourceImpl implements RestSource {
 
-    private RestApi restApi;
+    private RestAPI restApi;
     private Context context;
 
     public RestSourceImpl(Context context) {
@@ -43,7 +38,7 @@ public class RestSourceImpl implements RestSource {
                 .setLogLevel(RestAdapter.LogLevel.FULL)
                 .build();
 
-        restApi = apiRest.create(RestApi.class);
+        restApi = apiRest.create(RestAPI.class);
     }
 
     @SuppressWarnings("unchecked")
