@@ -2,7 +2,7 @@ package com.mredrock.cyxbs.di.modules;
 
 import android.app.Activity;
 
-import com.mredrock.cyxbs.di.PerActivity;
+import com.mredrock.cyxbs.di.scopes.PerActivity;
 
 import dagger.Module;
 import dagger.Provides;

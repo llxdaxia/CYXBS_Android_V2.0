@@ -3,6 +3,11 @@ package com.mredrock.cyxbs.presenter.activity;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 
+import com.mredrock.cyxbs.CyxbsApplication;
+import com.mredrock.cyxbs.data.model.UserModel;
+import com.mredrock.cyxbs.di.component.ApplicationComponent;
+import com.mredrock.cyxbs.di.modules.ActivityModule;
+import com.mredrock.cyxbs.domain.interactor.DefaultSubscriber;
 import com.mredrock.cyxbs.presenter.IPresenter;
 import com.mredrock.cyxbs.presenter.activity.swipebacklayout.app.SwipeBackActivity;
 import com.mredrock.cyxbs.view.IVu;
@@ -13,10 +18,10 @@ import de.greenrobot.event.EventBus;
 /**
  * @param <V>
  */
-public abstract class BasePresenterActivity<V extends AbsActivityVu> extends SwipeBackActivity implements IPresenter<V>{
+public abstract class BasePresenterActivity<V extends AbsActivityVu> extends SwipeBackActivity implements IPresenter<V> {
 
-    protected V               vu;
-    protected EventBus        bus;
+    protected V vu;
+    protected EventBus bus;
     protected FragmentManager fm;
 
     @Override
@@ -35,6 +40,7 @@ public abstract class BasePresenterActivity<V extends AbsActivityVu> extends Swi
             e.printStackTrace();
         }
         setSwipeBackEnable(shouldSwipeBack());
+        getApplicationComponent().inject(this);
     }
 
     @Override
@@ -78,6 +84,24 @@ public abstract class BasePresenterActivity<V extends AbsActivityVu> extends Swi
     @Override
     public void onDestroyVu() {
 
+    }
+
+    /**
+     * Get the Main Application component for dependency injection.
+     *
+     * @return {@link com.mredrock.cyxbs.di.component.ApplicationComponent}
+     */
+    protected ApplicationComponent getApplicationComponent() {
+        return ((CyxbsApplication) getApplication()).getApplicationComponent();
+    }
+
+    /**
+     * Get an Activity module for dependency injection.
+     *
+     * @return {@link com.mredrock.cyxbs.di.modules.ActivityModule}
+     */
+    protected ActivityModule getActivityModule() {
+        return new ActivityModule(this);
     }
 
 }

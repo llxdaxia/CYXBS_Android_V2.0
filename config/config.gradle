@@ -37,6 +37,7 @@ ext {
     javaxAnnotationVersion      = '10.0-b28'
 
     appDependencies = [
+            activeandroid       : "com.michaelpardo:activeandroid:${activeandroidVersion}",
             appcompat_v7        : "com.android.support:appcompat-v7:${appcompatVersion}",
             cardview            : "com.android.support:cardview-v7:${cardviewVersion}",
             palette             : "com.android.support:palette-v7:${paletteVersion}",
