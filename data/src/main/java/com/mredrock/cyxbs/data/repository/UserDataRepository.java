@@ -24,14 +24,6 @@ public class UserDataRepository implements UserRepository {
     private final DataStoreFactory factory;
     private final UserEntityDataMapper userEntityDataMapper;
 
-    private final Func1<UserEntity.UserEntityWrapper, User> userDetailsEntityDataMapper = new Func1<UserEntity.UserEntityWrapper, User>() {
-        @Override
-        public User call(UserEntity.UserEntityWrapper userEntityWrapper) {
-            return UserDataRepository.this.userEntityDataMapper.transform(userEntityWrapper);
-        }
-    };
-
-
     /**
      * Constructs a {@link UserRepository}.
      *
@@ -49,6 +41,6 @@ public class UserDataRepository implements UserRepository {
     @Override
     public Observable<User> getUser(String stuNum, String idNum) {
         final UserDataStore userDataStore = this.factory.createCloudUserDataStore(stuNum, idNum);
-        return userDataStore.getUser(stuNum, idNum).map(userDetailsEntityDataMapper);
+        return userDataStore.getUser(stuNum, idNum).map(UserDataRepository.this.userEntityDataMapper::transform);
     }
 }

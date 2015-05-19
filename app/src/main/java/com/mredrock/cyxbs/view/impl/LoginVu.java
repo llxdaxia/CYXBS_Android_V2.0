@@ -24,7 +24,7 @@ public class LoginVu extends AbsActivityVu {
         return false;
     }
 
-    public void showOk(UserModel model){
-        Toast.makeText(getContext(),model.getName(),Toast.LENGTH_LONG).show();
+    public void showOk(UserModel model) {
+        Toast.makeText(getContext(), "~~" + model.getName(), Toast.LENGTH_LONG).show();
     }
 }

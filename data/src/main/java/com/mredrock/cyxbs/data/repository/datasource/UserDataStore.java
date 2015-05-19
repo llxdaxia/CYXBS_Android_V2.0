@@ -11,10 +11,10 @@ import rx.Observable;
  */
 public interface UserDataStore {
     /**
-     * Get an {@link rx.Observable} which will emit a {@link UserEntity.UserEntityWrapper}.
+     * Get an {@link rx.Observable} which will emit a {@link UserEntity}.
      *
      * @param stuNum The student number used to retrieve user data.
      * @param idNum  The id number used to retrieve user data.
      */
-    Observable<UserEntity.UserEntityWrapper> getUser(final String stuNum, final String idNum);
+    Observable<UserEntity> getUser(final String stuNum, final String idNum);
 }

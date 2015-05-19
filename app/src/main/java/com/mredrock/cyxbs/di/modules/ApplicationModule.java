@@ -4,7 +4,9 @@ import android.content.Context;
 
 import com.mredrock.cyxbs.CyxbsApplication;
 import com.mredrock.cyxbs.UIThread;
+import com.mredrock.cyxbs.data.repository.UserDataRepository;
 import com.mredrock.cyxbs.domain.executor.PostExecutionThread;
+import com.mredrock.cyxbs.domain.repository.UserRepository;
 
 import javax.inject.Singleton;
 
@@ -33,5 +35,11 @@ public class ApplicationModule {
     @Singleton
     PostExecutionThread providesPostExecutionThread(UIThread uiThread){
         return uiThread;
+    }
+
+    @Provides
+    @Singleton
+    UserRepository providesUserRepository(UserDataRepository userDataRepository) {
+        return userDataRepository;
     }
 }

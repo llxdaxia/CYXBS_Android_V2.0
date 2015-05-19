@@ -8,11 +8,14 @@ import com.mredrock.cyxbs.common.Constants;
 import com.mredrock.cyxbs.data.entities.CourseEntity;
 import com.mredrock.cyxbs.data.entities.NewsEntity;
 import com.mredrock.cyxbs.data.entities.UserEntity;
+import com.mredrock.cyxbs.data.entities.Wrapper;
+import com.mredrock.cyxbs.data.exception.NotFoundException;
 
 import java.util.List;
 
 import retrofit.RestAdapter;
 import rx.Observable;
+import rx.exceptions.OnErrorThrowable;
 
 /**
  * 真的不晓得要咋个命名了
@@ -43,8 +46,8 @@ public class RestSourceImpl implements RestSource {
 
     @SuppressWarnings("unchecked")
     @Override
-    public Observable<UserEntity.UserEntityWrapper> getUserEntityById(String stuNum, String idNum) {
-        return restApi.getUser(stuNum, idNum);
+    public Observable<UserEntity> getUserEntityById(String stuNum, String idNum) {
+        return restApi.getUser(stuNum, idNum).map(userEntityWrapper -> check(userEntityWrapper, userEntityWrapper.getData()));
     }
 
     @SuppressWarnings("unchecked")
@@ -73,5 +76,13 @@ public class RestSourceImpl implements RestSource {
         isConnected = (networkInfo != null && networkInfo.isConnectedOrConnecting());
 
         return isConnected;
+    }
+
+    private <T> T check(Wrapper w, T t) {
+        if (t == null) {
+            throw new NotFoundException(w.getInfo());
+        } else {
+            return t;
+        }
     }
 }

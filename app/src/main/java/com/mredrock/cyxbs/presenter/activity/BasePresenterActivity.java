@@ -20,8 +20,8 @@ import de.greenrobot.event.EventBus;
  */
 public abstract class BasePresenterActivity<V extends AbsActivityVu> extends SwipeBackActivity implements IPresenter<V> {
 
-    protected V vu;
-    protected EventBus bus;
+    protected V               vu;
+    protected EventBus        bus;
     protected FragmentManager fm;
 
     @Override

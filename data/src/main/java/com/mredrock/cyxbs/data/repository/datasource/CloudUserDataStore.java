@@ -18,7 +18,7 @@ public class CloudUserDataStore implements UserDataStore {
     }
 
     @Override
-    public Observable<UserEntity.UserEntityWrapper> getUser(String stuNum, String idNum) {
+    public Observable<UserEntity> getUser(String stuNum, String idNum) {
         return restSource.getUserEntityById(stuNum, idNum);
     }
 

@@ -20,7 +20,7 @@ public interface RestSource {
      * @param stuNum The user id used to get user data.
      * @param idNum  The user passwd used to get user date.
      */
-    Observable<UserEntity.UserEntityWrapper> getUserEntityById(final String stuNum, final String idNum);
+    Observable<UserEntity> getUserEntityById(final String stuNum, final String idNum);
 
     /**
      * Retrieves an {@link rx.Observable} which will emit a {@link CourseEntity}.

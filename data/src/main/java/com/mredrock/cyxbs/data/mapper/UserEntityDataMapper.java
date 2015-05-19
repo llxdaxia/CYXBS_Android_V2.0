@@ -20,15 +20,14 @@ public class UserEntityDataMapper {
     }
 
     /**
-     * Transform a {@link UserEntity.UserEntityWrapper} into an {@link User}.
+     * Transform a {@link UserEntity} into an {@link User}.
      *
-     * @param userEntityWrapper Object to be transformed.
-     * @return {@link User} if valid {@link UserEntity.UserEntityWrapper} otherwise null.
+     * @param userEntity Object to be transformed.
+     * @return {@link User} if valid {@link UserEntity} otherwise null.
      */
-    public User transform(UserEntity.UserEntityWrapper userEntityWrapper) {
+    public User transform(UserEntity userEntity) {
         User user = null;
-        if (userEntityWrapper != null) {
-            UserEntity userEntity = userEntityWrapper.getData();
+        if (userEntity != null) {
             user = new User();
             user.setClassNum(userEntity.getClassNum());
             user.setCollege(userEntity.getCollege());
