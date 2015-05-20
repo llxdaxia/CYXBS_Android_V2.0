@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mredrock.cyxbs.presenter.fragment.CourseContainerFragment">
+
+    <com.mredrock.cyxbs.view.widget.tab.PagerSlidingTabStrip xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tab_strip"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/theme_primary"
+        app:pstIndicatorColor="#FFF"
+        app:pstIndicatorHeight="2dp"
+        app:pstPaddingMiddle="true"
+        app:pstTextSelectedStyle="normal"
+        app:pstTextStyle="normal" />
+
+    <com.mredrock.cyxbs.view.widget.tab.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_strip" />
+
+    <include
+        layout="@layout/include_toolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/tab_strip" />
+</RelativeLayout>

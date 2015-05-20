@@ -1,27 +1,27 @@
 package com.mredrock.cyxbs.presenter.activity;
 
-import android.util.Log;
+import android.content.Intent;
 
 import com.mredrock.cyxbs.UIThread;
-import com.mredrock.cyxbs.data.mapper.UserEntityDataMapper;
-import com.mredrock.cyxbs.data.mapper.UserModelDataMapper;
-import com.mredrock.cyxbs.data.model.UserModel;
-import com.mredrock.cyxbs.data.repository.UserDataRepository;
-import com.mredrock.cyxbs.data.repository.datasource.DataStoreFactory;
+import com.mredrock.cyxbs.model.UserModel;
+import com.mredrock.cyxbs.model.mapper.UserEntityDataMapper;
+import com.mredrock.cyxbs.model.mapper.UserModelDataMapper;
+import com.mredrock.cyxbs.model.repository.UserDataRepository;
+import com.mredrock.cyxbs.model.repository.datasource.DataStoreFactory;
 import com.mredrock.cyxbs.domain.interactor.GetUserUseCase;
 import com.mredrock.cyxbs.domain.model.User;
 import com.mredrock.cyxbs.presenter.ISubcriber;
 import com.mredrock.cyxbs.presenter.SubscriberProxy;
 import com.mredrock.cyxbs.view.impl.LoginVu;
+import com.seancode.common.utils.ScreenUtils;
+
+import static com.seancode.common.utils.LogUtils.*;
 
 public class LoginActivity extends BasePresenterActivity<LoginVu> implements ISubcriber<User> {
 
-    //    private UserComponent userComponent;
     SubscriberProxy<User> userModelSubscriberProxy;
 
-    //    @Inject
     GetUserUseCase getUserUserCase;
-//    @Inject
     UserModelDataMapper userModelDataMapper;
 
     @Override
@@ -36,29 +36,35 @@ public class LoginActivity extends BasePresenterActivity<LoginVu> implements ISu
 
     @Override
     public void onBindVu() {
-        getUserDetails();
+        vu.setLoginCallback(result -> attemptLogin());
     }
 
-    private void getUserDetails() {
+    private void attemptLogin() {
+        getUserDetails(vu.getStuEdit().getText().toString(), vu.getIdEdit().getText().toString());
+    }
+
+    private void getUserDetails(String stuNum, String idNum) {
         userModelSubscriberProxy = new SubscriberProxy<>(this);
+
         getUserUserCase = new GetUserUseCase(
                 new UIThread(),
-                "161339",
+                idNum,
                 new UserDataRepository(
                         new DataStoreFactory(this)
                         , new UserEntityDataMapper())
-                , "2013214151");
+                , stuNum);
         this.getUserUserCase.execute(userModelSubscriberProxy);
     }
 
     @Override
     public void onCompleted() {
-        Log.d("[DEBUG] ====> ", "onCompleted");
+        LOGD("[onCompleted]", "onCompleted");
     }
 
     @Override
     public void onError(Throwable e) {
-        e.printStackTrace();
+        LOGE("[onError]", e.getMessage());
+        ScreenUtils.Toaster.showLong(this, e.getMessage());
     }
 
     @Override
@@ -66,13 +72,8 @@ public class LoginActivity extends BasePresenterActivity<LoginVu> implements ISu
         userModelDataMapper = new UserModelDataMapper();
         UserModel userModel = userModelDataMapper.transform(user);
         vu.showOk(userModel);
+        startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+        this.finish();
     }
 
-//    private void initializeInjector(){
-//        this.userComponent = DaggerUserComponent.builder()
-//                .applicationComponent(getApplicationComponent())
-//                .activityModule(getActivityModule())
-//                .build();
-//        this.userComponent.inject(this);
-//    }
 }

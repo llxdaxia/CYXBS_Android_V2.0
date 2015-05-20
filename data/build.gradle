@@ -39,20 +39,21 @@ dependencies {
     compile project(':domain')
     compile project(':common')
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    def modelDependencies = rootProject.ext.modelDependencies
+    def dataDependencies = rootProject.ext.dataDependencies
 
-    apt modelDependencies.daggerCompiler
+    apt dataDependencies.daggerCompiler
 
-    provided modelDependencies.javaxAnnotation
+    provided dataDependencies.javaxAnnotation
 
-    compile modelDependencies.dagger
-    compile modelDependencies.okhttp
-    compile modelDependencies.okhttp_urlconnection
-    compile modelDependencies.retrofit
-    compile modelDependencies.activeandroid
-    compile modelDependencies.eventbus
-    compile modelDependencies.rxJava
-    compile modelDependencies.rxAndroid
-    compile modelDependencies.logger
-    compile modelDependencies.fastjson
+    compile dataDependencies.dagger
+    compile dataDependencies.okhttp
+    compile dataDependencies.okhttp_urlconnection
+    compile dataDependencies.retrofit
+    compile dataDependencies.activeandroid
+    compile dataDependencies.eventbus
+    compile dataDependencies.rxJava
+    compile dataDependencies.rxAndroid
+    compile dataDependencies.logger
+    compile dataDependencies.fastjson
+    compile dataDependencies.preferenceinjector
 }

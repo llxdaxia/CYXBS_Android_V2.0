@@ -3,7 +3,7 @@ package com.mredrock.cyxbs.presenter.fragment;
 
 import android.os.Bundle;
 
-import com.mredrock.cyxbs.data.event.NavEvent;
+import com.mredrock.cyxbs.event.NavEvent;
 import com.mredrock.cyxbs.presenter.adapter.NavigationDrawerAdapter;
 import com.mredrock.cyxbs.view.IVuCallback;
 import com.mredrock.cyxbs.view.impl.NavVu;

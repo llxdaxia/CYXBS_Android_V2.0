@@ -5,6 +5,7 @@ import android.content.Context;
 
 import com.mredrock.cyxbs.di.modules.ApplicationModule;
 import com.mredrock.cyxbs.domain.executor.PostExecutionThread;
+import com.mredrock.cyxbs.domain.repository.UserRepository;
 
 import javax.inject.Singleton;
 
@@ -18,8 +19,12 @@ import dagger.Component;
 @Component(modules = ApplicationModule.class)
 public interface ApplicationComponent {
     void inject(Activity activity);
-    
+
     //Exposed to sub-graphs.
     Context context();
+
     PostExecutionThread postExecutionThread();
+
+    UserRepository userRepository();
+
 }

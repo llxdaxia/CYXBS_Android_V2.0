@@ -69,6 +69,7 @@ dependencies {
     compile appDependencies.activeandroid
     compile appDependencies.rxJava
     compile appDependencies.rxAndroid
+    compile appDependencies.preferenceinjector
 
     provided appDependencies.javaxAnnotation
 
