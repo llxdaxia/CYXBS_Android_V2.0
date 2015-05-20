@@ -32,9 +32,10 @@ ext {
     butterknifeVersion          = '6.1.0'
     frescoVersion               = '0.4.0+'
     loggerVersion               = '1.8'
-    rxJavaVersion               = '1.0.9'
+    rxJavaVersion               = '1.0.+'
     rxAndroidVersion            = '0.24.0'
     javaxAnnotationVersion      = '10.0-b28'
+    preferenceinjectorVersion   = '2.2.1'
 
     appDependencies = [
             activeandroid       : "com.michaelpardo:activeandroid:${activeandroidVersion}",
@@ -52,6 +53,7 @@ ext {
             javaxAnnotation     : "org.glassfish:javax.annotation:${javaxAnnotationVersion}",
             rxJava              : "io.reactivex:rxjava:${rxJavaVersion}",
             rxAndroid           : "io.reactivex:rxandroid:${rxAndroidVersion}",
+            preferenceinjector  : "me.denley.preferenceinjector:PreferenceInjector:${preferenceinjectorVersion}",
     ]
 
     domainDependencies = [
@@ -62,7 +64,7 @@ ext {
             eventbus            : "de.greenrobot:eventbus:${eventbusVersion}",
     ]
 
-    modelDependencies = [
+    dataDependencies = [
             retrofit            : "com.squareup.retrofit:retrofit:${retrofitVersion}",
             okhttp              : "com.squareup.okhttp:okhttp:${okhttpVersion}",
             okhttp_urlconnection: "com.squareup.okhttp:okhttp-urlconnection:${okhttp_urlconnectionVersion}",
@@ -75,6 +77,7 @@ ext {
             rxJava              : "io.reactivex:rxjava:${rxJavaVersion}",
             rxAndroid           : "io.reactivex:rxandroid:${rxAndroidVersion}",
             javaxAnnotation     : "org.glassfish:javax.annotation:${javaxAnnotationVersion}",
+            preferenceinjector  : "me.denley.preferenceinjector:PreferenceInjector:${preferenceinjectorVersion}",
     ]
 
 }

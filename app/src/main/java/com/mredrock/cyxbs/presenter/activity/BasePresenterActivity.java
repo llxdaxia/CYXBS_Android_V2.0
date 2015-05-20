@@ -4,13 +4,10 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 
 import com.mredrock.cyxbs.CyxbsApplication;
-import com.mredrock.cyxbs.data.model.UserModel;
 import com.mredrock.cyxbs.di.component.ApplicationComponent;
 import com.mredrock.cyxbs.di.modules.ActivityModule;
-import com.mredrock.cyxbs.domain.interactor.DefaultSubscriber;
 import com.mredrock.cyxbs.presenter.IPresenter;
 import com.mredrock.cyxbs.presenter.activity.swipebacklayout.app.SwipeBackActivity;
-import com.mredrock.cyxbs.view.IVu;
 import com.mredrock.cyxbs.view.impl.AbsActivityVu;
 
 import de.greenrobot.event.EventBus;

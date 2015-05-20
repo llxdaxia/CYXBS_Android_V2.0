@@ -5,7 +5,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.view.MenuItem;
 
-import com.mredrock.cyxbs.data.event.NavEvent;
+import com.mredrock.cyxbs.event.NavEvent;
 import com.mredrock.cyxbs.presenter.fragment.CalendarContainerFragment;
 import com.mredrock.cyxbs.presenter.fragment.DiscoveryContainerFragment;
 import com.mredrock.cyxbs.presenter.fragment.InquiryContainerFragment;

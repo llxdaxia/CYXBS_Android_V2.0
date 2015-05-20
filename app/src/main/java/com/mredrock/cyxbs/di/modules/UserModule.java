@@ -1,13 +1,10 @@
 package com.mredrock.cyxbs.di.modules;
 
-import com.mredrock.cyxbs.data.repository.UserDataRepository;
 import com.mredrock.cyxbs.di.scopes.PerActivity;
 import com.mredrock.cyxbs.domain.executor.PostExecutionThread;
 import com.mredrock.cyxbs.domain.interactor.GetUserUseCase;
 import com.mredrock.cyxbs.domain.interactor.UseCase;
 import com.mredrock.cyxbs.domain.repository.UserRepository;
-
-import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;

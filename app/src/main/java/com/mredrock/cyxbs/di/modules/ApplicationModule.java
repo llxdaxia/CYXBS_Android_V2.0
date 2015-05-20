@@ -4,7 +4,7 @@ import android.content.Context;
 
 import com.mredrock.cyxbs.CyxbsApplication;
 import com.mredrock.cyxbs.UIThread;
-import com.mredrock.cyxbs.data.repository.UserDataRepository;
+import com.mredrock.cyxbs.model.repository.UserDataRepository;
 import com.mredrock.cyxbs.domain.executor.PostExecutionThread;
 import com.mredrock.cyxbs.domain.repository.UserRepository;
 

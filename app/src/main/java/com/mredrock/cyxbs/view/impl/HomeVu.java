@@ -67,7 +67,7 @@ public class HomeVu extends AbsActivityVu {
         };
 
         mDrawerLayout.setDrawerListener(mDrawerToggle);
-        mDrawerLayout.setStatusBarBackground(R.color.theme_primary_dark);
+//        mDrawerLayout.setStatusBarBackground(R.color.theme_primary_dark);
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
         mDrawerLayout.post(mDrawerToggle::syncState);
     }
