@@ -51,6 +51,7 @@ repositories {
 
 dependencies {
     compile project(':domain')
+    compile project(':data')
 
     def appDependencies = rootProject.ext.appDependencies
 
@@ -59,16 +60,18 @@ dependencies {
     compile appDependencies.cardview
     compile appDependencies.palette
     compile appDependencies.recyclerview
-    compile appDependencies.retrofit
-    compile appDependencies.okhttp
-    compile appDependencies.okhttp_urlconnection
     compile appDependencies.fresco
     compile appDependencies.imagepipeline_okhttp
-    compile appDependencies.activeandroid
-    compile appDependencies.fastjson
     compile appDependencies.eventbus
     compile appDependencies.butterknife
     compile appDependencies.logger
     compile appDependencies.dagger
+    compile appDependencies.activeandroid
+    compile appDependencies.rxJava
+    compile appDependencies.rxAndroid
+    compile appDependencies.preferenceinjector
+
+    provided appDependencies.javaxAnnotation
+
     apt appDependencies.daggerCompiler
 }

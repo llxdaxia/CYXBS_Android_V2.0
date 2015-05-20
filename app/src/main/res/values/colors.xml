@@ -46,4 +46,8 @@
     <color name="list_dropdown_foreground_normal">#ff333333</color>
 
     <color name="backgroundColorPress">@color/accent_material_dark</color>
+
+    <color name="grey">#f3f7fa</color>
+
+    <color name="background_tab_pressed">#1AFFFFFF</color>
 </resources>

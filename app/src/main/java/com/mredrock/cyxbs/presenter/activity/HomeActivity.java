@@ -3,15 +3,14 @@ package com.mredrock.cyxbs.presenter.activity;
 import android.content.res.Configuration;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.util.Log;
 import android.view.MenuItem;
 
-import com.mredrock.cyxbs.model.event.NavEvent;
+import com.mredrock.cyxbs.event.NavEvent;
 import com.mredrock.cyxbs.presenter.fragment.CalendarContainerFragment;
 import com.mredrock.cyxbs.presenter.fragment.DiscoveryContainerFragment;
 import com.mredrock.cyxbs.presenter.fragment.InquiryContainerFragment;
 import com.mredrock.cyxbs.presenter.fragment.NewsContainerFragment;
-import com.mredrock.cyxbs.presenter.fragment.ScheduleContainerFragment;
+import com.mredrock.cyxbs.presenter.fragment.CourseContainerFragment;
 import com.mredrock.cyxbs.view.impl.HomeVu;
 
 
@@ -62,7 +61,7 @@ public class HomeActivity extends BasePresenterActivity<HomeVu> {
         Fragment fragment;
         switch (position) {
             case 0:
-                fragment = ScheduleContainerFragment.newInstance();
+                fragment = CourseContainerFragment.newInstance();
                 break;
             case 1:
                 fragment = CalendarContainerFragment.newInstance();
@@ -77,7 +76,7 @@ public class HomeActivity extends BasePresenterActivity<HomeVu> {
                 fragment = DiscoveryContainerFragment.newInstance();
                 break;
             default:
-                fragment = ScheduleContainerFragment.newInstance();
+                fragment = CourseContainerFragment.newInstance();
                 break;
         }
         transaction.replace(vu.getContainerId(),fragment ).commit();

@@ -8,7 +8,7 @@ ext {
 
     applicationId               = "com.mredrock.cyxbs"
 
-    //app
+    //Android
     androidCompileSdkVersion    = 22
     androidBuildToolsVersion    = "22.0.1"
     androidMinSdkVersion        = 14
@@ -17,7 +17,7 @@ ext {
     versionCode                 = 5
     versionName                 = "2.0"
 
-    //libraries
+    //Libraries
     appcompatVersion            = '22.1.1'
     cardviewVersion             = '22.1.1'
     paletteVersion              = '22.1.1'
@@ -32,17 +32,17 @@ ext {
     butterknifeVersion          = '6.1.0'
     frescoVersion               = '0.4.0+'
     loggerVersion               = '1.8'
+    rxJavaVersion               = '1.0.+'
+    rxAndroidVersion            = '0.24.0'
+    javaxAnnotationVersion      = '10.0-b28'
+    preferenceinjectorVersion   = '2.2.1'
 
     appDependencies = [
+            activeandroid       : "com.michaelpardo:activeandroid:${activeandroidVersion}",
             appcompat_v7        : "com.android.support:appcompat-v7:${appcompatVersion}",
             cardview            : "com.android.support:cardview-v7:${cardviewVersion}",
             palette             : "com.android.support:palette-v7:${paletteVersion}",
             recyclerview        : "com.android.support:recyclerview-v7:${recyclerviewVersion}",
-            retrofit            : "com.squareup.retrofit:retrofit:${retrofitVersion}",
-            okhttp              : "com.squareup.okhttp:okhttp:${okhttpVersion}",
-            okhttp_urlconnection: "com.squareup.okhttp:okhttp-urlconnection:${okhttp_urlconnectionVersion}",
-            activeandroid       : "com.michaelpardo:activeandroid:${activeandroidVersion}",
-            fastjson            : "com.alibaba:fastjson:${fastjsonVersion}",
             eventbus            : "de.greenrobot:eventbus:${eventbusVersion}",
             dagger              : "com.google.dagger:dagger:${daggerVersion}",
             daggerCompiler      : "com.google.dagger:dagger-compiler:${daggerVersion}",
@@ -50,7 +50,34 @@ ext {
             fresco              : "com.facebook.fresco:fresco:${frescoVersion}",
             imagepipeline_okhttp: "com.facebook.fresco:imagepipeline-okhttp:${frescoVersion}",
             logger              : "com.orhanobut:logger:${loggerVersion}",
+            javaxAnnotation     : "org.glassfish:javax.annotation:${javaxAnnotationVersion}",
+            rxJava              : "io.reactivex:rxjava:${rxJavaVersion}",
+            rxAndroid           : "io.reactivex:rxandroid:${rxAndroidVersion}",
+            preferenceinjector  : "me.denley.preferenceinjector:PreferenceInjector:${preferenceinjectorVersion}",
+    ]
 
+    domainDependencies = [
+            daggerCompiler      : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger              : "com.google.dagger:dagger:${daggerVersion}",
+            javaxAnnotation     : "org.glassfish:javax.annotation:${javaxAnnotationVersion}",
+            rxJava              : "io.reactivex:rxjava:${rxJavaVersion}",
+            eventbus            : "de.greenrobot:eventbus:${eventbusVersion}",
+    ]
+
+    dataDependencies = [
+            retrofit            : "com.squareup.retrofit:retrofit:${retrofitVersion}",
+            okhttp              : "com.squareup.okhttp:okhttp:${okhttpVersion}",
+            okhttp_urlconnection: "com.squareup.okhttp:okhttp-urlconnection:${okhttp_urlconnectionVersion}",
+            activeandroid       : "com.michaelpardo:activeandroid:${activeandroidVersion}",
+            fastjson            : "com.alibaba:fastjson:${fastjsonVersion}",
+            dagger              : "com.google.dagger:dagger:${daggerVersion}",
+            daggerCompiler      : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            logger              : "com.orhanobut:logger:${loggerVersion}",
+            eventbus            : "de.greenrobot:eventbus:${eventbusVersion}",
+            rxJava              : "io.reactivex:rxjava:${rxJavaVersion}",
+            rxAndroid           : "io.reactivex:rxandroid:${rxAndroidVersion}",
+            javaxAnnotation     : "org.glassfish:javax.annotation:${javaxAnnotationVersion}",
+            preferenceinjector  : "me.denley.preferenceinjector:PreferenceInjector:${preferenceinjectorVersion}",
     ]
 
 }

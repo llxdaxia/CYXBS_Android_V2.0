@@ -17,6 +17,7 @@ import com.mredrock.cyxbs.view.IVu;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+import butterknife.Optional;
 
 /**
  * Created by David on 15/4/23.
@@ -26,6 +27,7 @@ public abstract class AbsActivityVu implements IVu {
     private Context        context;
     private LayoutInflater mLayoutInflater;
 
+    @Optional
     @InjectView(R.id.toolbar)
     Toolbar mToolbar;
 
@@ -51,8 +53,8 @@ public abstract class AbsActivityVu implements IVu {
     }
 
     public void configureToolbar() {
-        AppCompatActivity activity = (AppCompatActivity) context;
         if (mToolbar != null && shouldToolbarShow()) {
+            AppCompatActivity activity = (AppCompatActivity) context;
             activity.setSupportActionBar(mToolbar);
             if (shouldArrowShow()) {
                 ActionBar actionBar = activity.getSupportActionBar();
